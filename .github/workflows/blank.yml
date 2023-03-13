@@ -27,6 +27,6 @@ jobs:
          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz
          sudo apt install xrdp xfce4
          tar -xvzf ngrok-stable-linux-arm64.tgz
-         sudo ./ngrok authtoken "{{env.auth}}\r"
+         sudo ./ngrok authtoken $Env:NGROK_AUTH_TOKEN
          sudo service xrdp start
          sudo ./ngrok tcp 3389
