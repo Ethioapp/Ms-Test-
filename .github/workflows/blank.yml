@@ -19,7 +19,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Instalando o desktop
         run: sudo apt update && sudo apt install ubuntu-desktop 
-
       # Runs a set of commands using the runners shell
       - name: Instalando ngrok config usuario e xrdp
         run: |
